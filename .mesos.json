@@ -1,8 +1,8 @@
 {
     "default": {
-        "log_level": "warning", 
+        "master": "zk://localhost:2181/mesos", 
         "log_file": null, 
-        "master": "dev.squeakcloud.com:5050"
+        "log_level": "warning"
     }, 
     "profile": "default"
 }
