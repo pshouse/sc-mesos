@@ -1,0 +1,18 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+	  "image": "pshouse/sc-term",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 4445, "hostPort": 0, "servicePort": 4445, "protocol": "tcp" }
+      ]
+    }
+  },
+  "id": "sc-term",
+  "instances": 1,
+  "cpus": 0.5,
+  "mem": 128,
+  "uris": []
+}
+

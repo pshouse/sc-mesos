@@ -1,0 +1,23 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+	  "image": "logentries/docker-logentries",
+      "network": "HOST"
+    },
+    "volumes": [
+	{
+		"containerPath":"/var/run/docker.sock",
+		"hostPath": "/var/run/docker.sock",
+		"mode": "RW"
+	}
+    ]
+  },
+  "id": "logentries",
+  "instances": 1,
+  "args": ["-t utvkgDK9 -j -a host=`uname -n`"],
+  "cpus": 0.125,
+  "mem": 128,
+  "uris": []
+}
+
